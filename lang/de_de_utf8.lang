@@ -2,3 +2,5 @@ opf_lang_addon_name = Platzhalter ersetzen
 opf_lang_function = Funktion
 opf_lang_replacement = Ersetzung
 opf_lang_wildcard = Platzhalter
+opf_lang_help = Hilfe
+opf_lang_help_title = Info
