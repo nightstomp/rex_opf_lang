@@ -34,7 +34,7 @@ echo $x->get('%%copyright%%', $REX['CUR_CLANG']);
 
 Sprachersetzungen auf eigenen HTML-Code anwenden:
 $x = new opf_lang();
-echo $x->replace($my_content, $REX['CUR_CLANG']);
+echo $x->get($my_content, $REX['CUR_CLANG']);
 
 </p>
 
