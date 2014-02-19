@@ -22,7 +22,7 @@ echo $x->get('%%copyright%%');
 echo $x->get('%%copyright%%', 0);
 echo $x->get('%%copyright%%', $REX['CUR_CLANG']);
 
-Sprachersetzungen auf eigenen HTML-Code anwenden:
+//Sprachersetzungen auf eigenen HTML-Code anwenden:
 $x = new opf_lang();
 echo $x->replace($my_content, $REX['CUR_CLANG']);
 
