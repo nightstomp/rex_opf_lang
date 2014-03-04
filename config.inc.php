@@ -25,6 +25,8 @@ $REX['ADDON']['supportpage'][$mypage] = 'forum.redaxo.de';
 $REX['ADDON']['table_prefix'][$mypage] = $REX['TABLE_PREFIX'].$REX['ADDON']['rxid'][$mypage].'_';
 $REX['ADDON']['path'][$mypage] = $REX['INCLUDE_PATH'].'/addons/'.$mypage;
 
+$REX['ADDON'][$mypage]['open_tag'] = '{{ ';
+$REX['ADDON'][$mypage]['close_tag'] = ' }}';
 
 $REX['PERM'][] = 'opf_lang[]';
 
