@@ -14,7 +14,7 @@ function rex_b1_opf_lang($params)
 	$rows = $sql->getRows();
 	for ($i = 0; $i < $rows; $i ++)
 	{
-		$srch[] = $sql->getValue('wildcard');
+		$srch[] = $REX['ADDON']['opf_lang']['open_tag'] . $sql->getValue('wildcard') . $REX['ADDON']['opf_lang']['close_tag'];
 		$rplc[] = nl2br($sql->getValue('replacement'));
 		$sql->next();
 	}
