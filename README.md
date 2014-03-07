@@ -27,5 +27,5 @@ echo $x->get($my_content, $REX['CUR_CLANG']);
 
 ````
 
-Hinweis: der open und close Tag für replacements kann in der config.inc.php editiert werden.
-Der Standard ist {{ und }} (kann natürlich auch auf ### oder %% geändert werden)
+Hinweis: der open und close Tag für Ersetzungen kann in der config.inc.php editiert werden.
+Der Standard ist **{{ und }}** (kann natürlich auch auf ### oder %% geändert werden)
