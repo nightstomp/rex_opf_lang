@@ -27,6 +27,6 @@ echo $x->get($my_content, $REX['CUR_CLANG']);
 
 ````
 
-Hinweis: der open und close Tag für Ersetzungen kann in der config.inc.php editiert werden.
+Hinweis: der open und close Tag für Ersetzungen kann in der config.inc.php editiert werden. (siehe https://github.com/nightstomp/rex_opf_lang/blob/master/config.inc.php#L27)
 
 Der Standard ist **{{ tag }}** (kann natürlich auch auf ### oder %% geändert werden)
