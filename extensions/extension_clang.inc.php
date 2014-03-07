@@ -12,7 +12,7 @@ function rex_b1_clang_added($params)
   $id = (int)$params['id'];
 	
 	// abgleich der replacevalue felder..
-	$sql = new rex_sql();
+	$sql = rex_sql::factory();
 	// $sql->debugsql = true;
 	$sql->setQuery('SELECT id, clang, replacement, wildcard, count(wildcard) AS count FROM '.TBL_B1_OPF_LANG.' GROUP BY wildcard');
 	
@@ -29,13 +29,13 @@ function rex_b1_clang_added($params)
 				$repl = $sql->getValue('replacement');
 				$wild = $sql->getValue('wildcard');
 				
-				$sqlCheck = new rex_sql();
+				$sqlCheck = rex_sql::factory();
 				$sqlCheck->setQuery('SELECT clang FROM '.TBL_B1_OPF_LANG.' WHERE clang = "'.$key.'" AND wildcard = "'.$wild.'"');
 				
 				if ($sqlCheck->getRows() == 0)
 				{
 					// Nicht gefunden Sprache hinzufuegen	
-					$sqlInsert = new rex_sql();
+					$sqlInsert = rex_sql::factory();
 					$sqlInsert->setTable(TBL_B1_OPF_LANG);
 					$sqlInsert->setValue('id', $id);
 					$sqlInsert->setValue('clang', $key);
@@ -60,7 +60,7 @@ function rex_b1_clang_delete($params)
   $id = (int)$params['id'];
 	
 	// abgleich der replacevalue felder..
-	$sql = new rex_sql();
+	$sql = rex_sql::factory();
 	$sql->debugsql = true;
 	$sql->setQuery('DELETE FROM '.TBL_B1_OPF_LANG.' WHERE clang = "'.$id.'"');
 	
